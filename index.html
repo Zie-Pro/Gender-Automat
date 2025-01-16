@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Automat</title>
+        <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <header class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Logo" height="90">
+                Gender Automat
+            </a>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Anleitungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Über uns</a></li>
+                </ul>
+            </nav>
+            <div class="mt-5 w-05">
+                <form id="searchForm" class="d-flex" onsubmit="return false;">
+                    <input 
+                        id="searchInput" 
+                        class="form-control me-2" 
+                        type="search" 
+                        placeholder="Suchen..." 
+                        aria-label="Search">
+                    <button id="searchButton" class="btn btn-outline-light" type="submit">Suchen</button>
+                </form>
+            </div>
+        </div>
+</header>
+
+<main class="container my-5">
+    <h1 class="rainbow-text">Herzlich Willkommen Beim Gender Automat</h1>
+    <p>Jeder hat das Recht, den Weg seiner Identität zu wählen</p>
+    <p>Diese Anwendung hilft Ihnen, Ihre technischen Dokumentationen gendersensibel zu gestalten.</p>
+
+    <nav class="d-flex flex-column flex-lg-row my-4">
+        <a class="btn btn-outline-primary me-2 mb-2" href="#text1">Anleitung 1</a>
+        <a class="btn btn-outline-primary me-2 mb-2" href="#text2">Anleitung 2</a>
+        <a class="btn btn-outline-primary me-2 mb-2" href="#text3">Anleitung 3</a>
+    </nav>
+
+    <section>
+        <article id="text1">
+            <h2>Anleitung 1</h2>
+            <p>Der Benutzer soll die Einstellungen ändern. Mitarbeiter können das Passwort zurücksetzen.</p>
+        </article>
+        <article id="text2">
+            <h2>Anleitung 2</h2>
+            <p>Redakteure sind angehalten, die Formatierung zu überprüfen. "Der Fahrer trägt die Verantwortung für die Auslieferung."</p>
+        </article>
+        <article id="text3">
+            <h2>Anleitung 3</h2>
+            <p>Kollegen aus der IT-Abteilung können Unterstützung leisten. Kunden haben Zugriff auf die Dokumentation.</p>
+        </article>
+    </section>
+
+    <button id="convertButton" class="btn btn-success mt-4">Texte gendern</button>
+
+    <div id="output" class="mt-4">
+        <h3>Geänderter Text:</h3>
+        <pre class="bg-light p-3" id="outputText"></pre>
+    </div>
+</main>
+
+<footer class="bg-secondary text-white text-center py-3">
+    <p>&copy; 2025 Fachverlag für technische Dokumentationen. Alle Rechte vorbehalten.</p>
+    <p><a href="#" class="text-white">Datenschutzerklärung</a> | <a href="#" class="text-white">Impressum</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

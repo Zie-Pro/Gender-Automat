@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#outputText {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: greenyellow;
+    border: 1px solid #0056b3;
+}
+
+.rainbow-text {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make it bold */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Smooth gradient */
+    
+    /* Ensure compatibility by using both vendor-prefixed and standard properties */
+    -webkit-background-clip: text; /* Clip the background to the text for WebKit-based browsers */
+    background-clip: text; /* Standard property, for non-WebKit browsers (not widely supported yet) */
+    
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent so the gradient shows */
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+}
+
+
+
